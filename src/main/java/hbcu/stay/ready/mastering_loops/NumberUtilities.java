@@ -72,4 +72,16 @@ public class NumberUtilities {
         }
         return result;
     }
+	
+	public static String getExponentiations(int start, int stop, int step, int exponent) {
+		String result = "";
+		
+		for (int i = start; i < stop; i += step) {
+
+			result += (int) Math.pow(i, exponent);
+
+			}
+		
+        return result;
+    }
 }
